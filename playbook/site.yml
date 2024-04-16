@@ -1,0 +1,8 @@
+---
+- hosts: runners
+  become: yes
+  connection: local
+  roles:
+    - docker
+    - gitbla-runner
+    - serverspec
